@@ -3,9 +3,18 @@ import React from 'react';
 function App() {
     return (
         <div>
-            <p><input type="checkbox"></input>This is paragraph block 1.</p>
-            <p><input type="checkbox"></input>This is a paragraph block 2.</p>
-            <p><input type="checkbox"></input>This is a paragraph block 3.</p>
+            <input type="checkbox" />
+            <p>This is paragraph 1. </p>
+
+            <input type="checkbox" />
+            <p>This is paragraph 2. </p>
+
+            <input type="checkbox" />
+            <p>This is paragraph 2. </p>
+
+            <input type="checkbox" />
+            <p>This is paragraph 2. </p>
+
         </div>
     )
 }
