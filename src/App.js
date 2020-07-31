@@ -21,21 +21,24 @@ class App extends React.Component {
     constructor() {
         super()
 
-        this.state = todosData.map(item => <ToDoItem 
-            item={item}
-            key={item.id} 
-        />)
+        this.state = {
+            allToDos: todosData
+        }
 
         }
         render() {
+            const toDos = this.state.allToDos.map(item => <ToDoItem 
+            item={item}
+            key={item.id} 
+            />)
+        
             return (
                 <div className="todo-list">
-                    {this.state}
+                    {toDos}
                 </div>
             )
         }
 }
-
 
 
 export default App;
